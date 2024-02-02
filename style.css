@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+body {
+  background: rgb(194, 193, 193);
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow-x: hidden !important;
+}
+
+.home {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
