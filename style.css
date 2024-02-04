@@ -12,12 +12,59 @@ html {
 }
 
 body {
-  background: rgb(194, 193, 193);
   max-width: 2000px;
   margin: 0 auto;
   overflow-x: hidden !important;
 }
 
-.home {
-  background-color: red;
+.home-cont {
+  display: flex;
+  height: 2500px;
+  width: 100%;
+  background-color: #1A4019;
+}
+.home-cont .background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-image: url("Assets/homebackground.png");
+  background-repeat: no-repeat;
+}
+.home-cont .background .title {
+  margin-top: 300px;
+  color: white;
+  font-size: 180px;
+  font-family: Luxurious Script;
+  font-weight: 500px;
+  z-index: 4;
+}
+.home-cont .background .date {
+  color: white;
+  font-size: 30px;
+  font-family: Lustria;
+  font-weight: 300px;
+  z-index: 4;
+}
+.home-cont .background .description {
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: Lustria;
+  font-weight: 100px;
+  z-index: 4;
+  width: auto;
+  text-align: center;
+}
+.home-cont .background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #1A4019, transparent); /* Green to transparent */
+  z-index: 1; /* Ensure the overlay appears above the background image */
 }/*# sourceMappingURL=style.css.map */
