@@ -5,7 +5,7 @@
   background-color: #1A4019;
 
   .background {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,8 +13,10 @@
     height: 100vh;
     width: 100%;
     background-image: url('Assets/homebackground.png');
-    background-repeat: no-repeat; 
-    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     .title {
       margin-top: 300px;
       color: white;
@@ -48,8 +50,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to top, #1A4019, transparent); /* Green to transparent */
-    z-index: 1; /* Ensure the overlay appears above the background image */
-    
+    background: linear-gradient(to top, #1A4019, transparent); /* Green to transparent /
+    z-index: 1; / Ensure the overlay appears above the background image */
+
   }
 }

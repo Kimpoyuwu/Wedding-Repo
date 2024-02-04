@@ -1,19 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <!--FAVICON-->
+  <link rel="icon" type="image/x-icon" href="Assets/logo.png">
+
 </head>
 <body>
-    <div class="home">
-        <div class="titlecont">
-            <h1>Jho & Ern</h1>
-            <h2>02 • 28 • 24</h2>
-            <p>Embarking on a journey of love, unity, and endless adventures together, hand in hand through the beautiful bond of marriage.</p>
-            <p>123</p>
+    <!--NAVBAR SECTION-->
+    <header>
+        <div class="limiter">
+            <nav class="navbar">
+                <div class="logo">
+                    <a onclick="logo1()" href="#home">
+                        <img src="Assets/logo.png" alt=""> 
+                    </a>
+                </div>
+
+                <ul class="navlinks" id="links" >
+                    <li class="navitems" ><a href="#home" id="Home" class="itemlinks active">Home</a></li>
+                    <li class="navitems"><a href="#" id="Learn" class="itemlinks">Jho & Ern</a></li>
+                    <li class="navitems"><a href="#" id="Learn" class="itemlinks">About Wedding</a></li>
+                    <li class="navitems"><a href="#" id="Aboutus" class="itemlinks">Messages</a></li>
+
+                </ul>
+
+                <div id="burger">
+                    <div class="burgerlines"></div>
+                    <div class="burgerlines"></div>
+                    <div class="burgerlines"></div>
+                </div>
+            </nav>
         </div>
+    </header>
+
+
+
+
+  <div class="home-cont" id="home">
+    <div class="background">
+      <div class="title">Ernest & Jho</div>
+      <div class="date">02 • 28 • 24</div>
+      <div class="description">Embarking on a journey of love, unity, and 
+        endless adventures together, <br> hand in hand  through the beautiful 
+        bond of marriage.</div>
     </div>
+  </div>
+
+
+
+    <!--MENUBAR SCRIPT-->
+
+        <script>
+            const burger = document.getElementById('burger');
+            const links = document.getElementById('links');
+
+            burger.addEventListener('click', () => {
+                links.classList.toggle('active');
+            })
+
+            $("#links").click(() => {
+                links.classList.remove('active');
+            })
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+        <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("header").addClass("black");
+            }
+            else{
+                $("header").removeClass("black");
+            }
+        });
+        </script>
+
+        <!--AOS ANIMATION SCRIPT-->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+        crossorigin="anonymous"></script>
+
+    <!-- ANIMATION -->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js%22%3E"></script>
+
+        <script>
+            AOS.init();
+        </script>
+
 </body>
 </html>
