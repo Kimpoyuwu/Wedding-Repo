@@ -1,6 +1,6 @@
 .home-cont {
   display: flex;
-  height: 2500px;
+  height: auto;
   width: 100%;
   background-color: #1A4019;
 
@@ -23,14 +23,14 @@
       font-size: 180px;
       font-family: Luxurious Script;
       font-weight: 500px;
-      z-index: 4;
+      z-index: 1;
     }
     .date {
       color: white;
       font-size: 30px;
       font-family: Lustria;
       font-weight: 300px;
-      z-index: 4;
+      z-index: 1;
     }
     .description {
       margin-top: 20px;
@@ -38,7 +38,7 @@
       font-size: 20px;
       font-family: Lustria;
       font-weight: 100px;
-      z-index: 4;
+      z-index: 1;
       width: auto;
       text-align: center;
     }

@@ -252,7 +252,7 @@ body {
 
 .home-cont {
   display: flex;
-  height: 2500px;
+  height: auto;
   width: 100%;
   background-color: #1A4019;
 }
@@ -274,14 +274,14 @@ body {
   font-size: 180px;
   font-family: Luxurious Script;
   font-weight: 500px;
-  z-index: 4;
+  z-index: 1;
 }
 .home-cont .background .date {
   color: white;
   font-size: 30px;
   font-family: Lustria;
   font-weight: 300px;
-  z-index: 4;
+  z-index: 1;
 }
 .home-cont .background .description {
   margin-top: 20px;
@@ -289,7 +289,7 @@ body {
   font-size: 20px;
   font-family: Lustria;
   font-weight: 100px;
-  z-index: 4;
+  z-index: 1;
   width: auto;
   text-align: center;
 }
@@ -302,4 +302,75 @@ body {
   left: 0;
   background: linear-gradient(to top, #1A4019, transparent); /* Green to transparent /
 z-index: 1; / Ensure the overlay appears above the background image */
+}
+
+.jhoAndErn {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  background-color: #1A4019;
+}
+.jhoAndErn .container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 400px;
+  margin-right: 300px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.jhoAndErn .container .right-cont {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.jhoAndErn .container .right-cont .caption {
+  color: white;
+  font-size: 40px;
+  font-family: Lustria;
+  font-weight: 100px;
+}
+.jhoAndErn .container .left-cont {
+  margin-right: 50px;
+}
+.jhoAndErn .container .left-cont img:hover {
+  transform: scale(1.1);
+}
+.jhoAndErn .container1 {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 400px;
+  margin-right: 300px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+.jhoAndErn .container1 .right-cont {
+  margin-left: 50px;
+}
+.jhoAndErn .container1 .right-cont img:hover {
+  transform: scale(1.1);
+}
+.jhoAndErn .container1 .left-cont {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.jhoAndErn .container1 .left-cont .caption {
+  color: white;
+  font-size: 40px;
+  font-family: Lustria;
+  font-weight: 100px;
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
