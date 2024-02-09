@@ -99,3 +99,250 @@
 
     }
 }
+
+
+@media (max-width: 1864px){
+    .jhoAndErn{
+        .container{
+            margin-left: 200px;
+            margin-right: 100px;
+        }
+    }
+}
+
+@media (max-width: 1428px){
+    .jhoAndErn{
+        .container{
+            margin-left: 150px;
+            margin-right: 50px;
+        }
+    }
+}
+
+@media (max-width: 1329px){
+    .jhoAndErn{
+        .container{
+            margin-left: 30px;
+            margin-right: 0px;
+        }
+    }
+        
+    
+}
+
+
+@media (max-width: 1304px){
+    .jhoAndErn{
+        .container{
+            margin-left: 70px;
+            margin-right: 0px;
+        }
+    }
+        
+    
+}
+
+@media (max-width:1198px){
+    .jhoAndErn{
+        .container{
+            margin-left: 20px;
+            margin-right: 20px;
+            
+
+            .right-cont{
+                width: 90%;
+                text-align: justify;
+            }
+            .left-cont{
+                width: 90%;
+                display: flex;
+                align-items:center;
+                justify-content: center;
+
+                margin-bottom: 20px;
+                margin-right: 0px;
+            }
+        }
+    }
+       
+}
+
+@media (max-width: 1026px){
+    .jhoAndErn{
+        .container1{
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .jhoAndErn{
+        .container{
+            .right-cont{
+                .caption{
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 650px){
+    .jhoAndErn{
+        
+        .container{
+            margin-top: 40px;
+            .left-cont{
+                
+                img{
+                    transform: scale(.8);
+                }
+                img:hover{
+                    transform: scale(.9);
+                }
+            }
+            .right-cont{
+                margin-top: -50px;
+                .caption{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 530px){
+    .jhoAndErn{
+        .container{
+            .left-cont{
+                img{
+                    transform: scale(.75);
+                }
+                img:hover{
+                    transform: scale(.8);
+                }
+            }
+            .right-cont{
+                .caption{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1864px){
+    .jhoAndErn{
+        .container1{
+            margin-right: 200px;
+            margin-left: 100px;
+        }
+    }
+}
+
+@media (max-width: 1528px){
+    .jhoAndErn{
+        .container1{
+            margin-top: 130px;
+        }
+    }
+}
+@media (max-width: 1428px){
+    .jhoAndErn{
+        .container1{
+            margin-right: 150px;
+            margin-left: 50px;
+        }
+    }
+}
+
+
+
+@media (max-width: 1334px){
+    .jhoAndErn{
+        .container1{
+            margin-right: 50px;
+            margin-left: 0px;
+        }
+    }
+        
+    
+}
+
+@media (max-width: 1198px){
+    .jhoAndErn{
+        .container1{
+            flex-direction: column-reverse;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            justify-content: center;
+            align-items: center;
+    
+
+            .left-cont{
+                width: 90%;
+                .caption{
+                    text-align: justify;
+                }
+            }
+            .right-cont{
+                width: 90%;
+                display: flex;
+                align-items:center;
+                justify-content: center;
+
+                margin-bottom: 20px;
+                margin-left: 0px;
+            }
+        }
+            
+        
+    }
+
+    @media (max-width: 1026px){
+        .jhoAndErn{
+            .container1{
+                margin-top: 50px;
+            }
+        }
+    }
+     
+    @media (max-width: 900px){
+        .jhoAndErn{
+            .container{
+                .left-cont{
+                    .caption{
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media(max-width: 650px){
+    .jhoAndErn{
+        
+        .container1{
+            margin-top: 40px;
+            .right-cont{
+                
+                img{
+                    transform: scale(.8);
+                }
+                img:hover{
+                    transform: scale(.9);
+                }
+            }
+            .left-cont{
+                margin-top: -50px;
+                .caption{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
