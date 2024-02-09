@@ -304,28 +304,33 @@
       </audio>
     
     <<script>
-        // Function to toggle mute state of audio
-        function toggleMute() {
-            var audio = document.getElementById('audio');
-            var audioIcon = document.getElementById('audioIcon');
-            if (audio.muted) {
-                audio.muted = false;
-                audioIcon.className = 'fas fa-volume-up'; // Change icon to unmute when audio is not muted
-                // Store the state in localStorage
-                localStorage.setItem('audioMuted', 'false');
-            } else {
-                audio.muted = true;
-                audioIcon.className = 'fas fa-volume-off'; // Change icon to mute when audio is muted
-                // Store the state in localStorage
-                localStorage.setItem('audioMuted', 'true');
-            }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to toggle mute state of audio
+            function toggleMute() {
+                var audio = document.getElementById('audio');
+                var audioIcon = document.getElementById('audioIcon');
+                if (audio.muted) {
+                    audio.muted = false;
+                    audioIcon.className = 'fas fa-volume-up'; // Change icon to unmute when audio is not muted
+                    // Store the state in localStorage
+                    localStorage.setItem('audioMuted', 'false');
+                } else {
+                    audio.muted = true;
+                    audioIcon.className = 'fas fa-volume-off'; // Change icon to mute when audio is muted
+                    // Store the state in localStorage
+                    localStorage.setItem('audioMuted', 'true');
+                }
         }
-    
+
+        
+       document.addEventListener('DOMContentLoaded', function() {
         // Set initial audio volume
         document.getElementById('audio').volume = 0.35;
+        });
     
         // Retrieve stored mute state from localStorage and apply it
-        window.addEventListener('load', function() {
+        document.addEventListener('DOMContentLoaded', function() {
             var audioMuted = localStorage.getItem('audioMuted');
             var audio = document.getElementById('audio');
             var audioIcon = document.getElementById('audioIcon');
