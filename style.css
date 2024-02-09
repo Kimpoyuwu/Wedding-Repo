@@ -633,6 +633,9 @@ z-index: 1; / Ensure the overlay appears above the background image */
   text-align: center;
   margin-right: 25px;
 }
+.about-wedding .main-cont .send-gift .codes .gcash img:hover {
+  transform: scale(1.1);
+}
 .about-wedding .main-cont .send-gift .codes .gcash p {
   color: rgb(255, 255, 255);
   font-family: Lustria;
@@ -642,6 +645,7 @@ z-index: 1; / Ensure the overlay appears above the background image */
   letter-spacing: 5%;
   text-align: center;
   text-decoration-line: underline;
+  margin-top: 15px;
 }
 .about-wedding .main-cont .send-gift .codes .bank {
   display: flex;
@@ -649,6 +653,9 @@ z-index: 1; / Ensure the overlay appears above the background image */
   align-items: center;
   text-align: center;
   margin-left: 25px;
+}
+.about-wedding .main-cont .send-gift .codes .bank img:hover {
+  transform: scale(1.1);
 }
 .about-wedding .main-cont .send-gift .codes .bank p {
   color: rgb(255, 255, 255);
@@ -659,4 +666,166 @@ z-index: 1; / Ensure the overlay appears above the background image */
   letter-spacing: 5%;
   text-align: center;
   text-decoration-line: underline;
+  margin-top: 15px;
+}
+
+.message-main {
+  display: flex;
+  height: auto;
+  background: rgb(124, 156, 119);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.message-main .message-cont {
+  width: 1241px;
+  height: 1710px;
+  border-radius: 26px;
+  background: rgb(255, 255, 255);
+  margin-top: 150px;
+}
+.message-main .message-cont .message-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: rgb(0, 0, 0);
+  font-family: Lustria;
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 3%;
+  text-align: center;
+}
+.message-main .message-cont .input-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.message-main .message-cont .input-message .name {
+  width: 1079px;
+  height: 55px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 13px;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-family: Lustria;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 3%;
+}
+.message-main .message-cont .input-message .message {
+  width: 1079px;
+  height: 440px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 13px;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-family: Lustria;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 3%;
+}
+.message-main .message-cont .input-message .submit {
+  width: 176px;
+  height: 61px;
+  border-radius: 9px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(124, 156, 119);
+  border: none;
+  color: rgb(0, 0, 0);
+  font-family: Lustria;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 3%;
+  text-align: center;
+}
+.message-main .message-cont .input-message .submit:hover {
+  transform: scale(1.1);
+}
+.message-main .message-cont .comment-section {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-top: 50px;
+}
+.message-main .message-cont .comment-section .comment-cont {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 95%;
+  margin-bottom: 30px;
+  padding-left: 80px;
+}
+.message-main .message-cont .comment-section .comment-cont .comments {
+  display: flex;
+  flex-direction: column;
+}
+.message-main .message-cont .comment-section .comment-cont .comments .user-name {
+  color: rgb(26, 64, 25);
+  font-family: Lustria;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 3%;
+  text-align: left;
+}
+.message-main .message-cont .comment-section .comment-cont .comments .user-message {
+  color: rgb(48, 48, 48);
+  font-family: Lustria;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 4%;
+  text-align: left;
+}
+.message-main .thank-you {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgb(255, 255, 255);
+  font-family: Luxurious Script;
+  font-size: 95px;
+  font-weight: 400;
+  line-height: 114px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.footer {
+  height: auto;
+  width: 100%;
+}
+.footer .footer-cont {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(48, 48, 48);
+  font-family: Lustria;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 4%;
+  text-align: left;
+}
+.footer .footer-cont img {
+  margin-right: 20px;
+}
+.footer .footer-cont a {
+  margin-left: 20px;
+  color: rgb(48, 48, 48);
+  font-family: Lustria;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 4%;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
