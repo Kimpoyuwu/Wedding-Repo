@@ -828,4 +828,23 @@ z-index: 1; / Ensure the overlay appears above the background image */
   line-height: 28px;
   letter-spacing: 4%;
   text-align: left;
+}
+
+.audio-toggle {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+.audio-toggle i {
+  color: #333;
 }/*# sourceMappingURL=style.css.map */

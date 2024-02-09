@@ -271,78 +271,42 @@
     </div>
 
 
-
-    <style>
-        /* Styling for the toggle icon */
-        .audio-toggle {
-          width: 50px;
-          height: 50px;
-          background-color: #ccc;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-          position: fixed;
-          bottom: 20px;
-          right: 20px;
-          z-index: 9999; /* Ensure it's above other content */
-        }
     
-        .audio-toggle i {
-          color: #333;
-        }
-    
-      </style>
 
     <div class="audio-toggle" onclick="toggleMute()">
         <i id="audioIcon" class="fas fa-volume-up"></i>
     </div>
-    
-      <audio id="audio" loop autoplay>
-        <source src="Assets/background.mp3" type="audio/mpeg">
-      </audio>
-    
-    <<script>
-
+      
+    <audio id="audio" src="Assets/background.mp3" preload="auto" loop autoplay></audio>
+      
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Function to toggle mute state of audio
-            function toggleMute() {
-                var audio = document.getElementById('audio');
-                var audioIcon = document.getElementById('audioIcon');
-                if (audio.muted) {
-                    audio.muted = false;
-                    audioIcon.className = 'fas fa-volume-up'; // Change icon to unmute when audio is not muted
-                    // Store the state in localStorage
-                    localStorage.setItem('audioMuted', 'false');
-                } else {
-                    audio.muted = true;
-                    audioIcon.className = 'fas fa-volume-off'; // Change icon to mute when audio is muted
-                    // Store the state in localStorage
-                    localStorage.setItem('audioMuted', 'true');
-                }
-        }
-
-        
-       document.addEventListener('DOMContentLoaded', function() {
-        // Set initial audio volume
-        document.getElementById('audio').volume = 0.35;
+          var audio = document.getElementById('audio');
+          var audioIcon = document.getElementById('audioIcon');
+      
+          audio.load();
+          audio.play(); // Start playing the audio
+          
         });
-    
-        // Retrieve stored mute state from localStorage and apply it
-        document.addEventListener('DOMContentLoaded', function() {
-            var audioMuted = localStorage.getItem('audioMuted');
-            var audio = document.getElementById('audio');
-            var audioIcon = document.getElementById('audioIcon');
-            if (audioMuted === 'true') {
-                audio.muted = true;
-                audioIcon.className = 'fas fa-volume-off'; // Change icon to mute when audio is muted
+
+        //Function to toggle mute state
+          function toggleMute() {
+            if (audio.muted) {
+              audio.muted = false;
+              audioIcon.className = 'fas fa-volume-up'; // Change icon to unmute when audio is not muted
+              audio.play(); // Start playing the audio
+            } else {
+              audio.muted = true;
+              audioIcon.className = 'fas fa-volume-off'; // Change icon to mute when audio is muted
+              audio.pause(); // Pause the audio
             }
-        });
+          }
+      
+          // Adjust the volume 
+          audio.volume = 0.25;
     </script>
-
-
-    
+      
+      
 
 
 
