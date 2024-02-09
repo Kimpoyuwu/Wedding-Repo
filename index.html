@@ -273,38 +273,36 @@
 
     
 
-    <div class="audio-toggle" onclick="toggleMute()">
-        <i id="audioIcon" class="fas fa-volume-up"></i>
-    </div>
+    <div class="audio-toggle" onclick="togglePlay()">
+        <i id="audioIcon" class="fas fa-music"></i>
+      </div>
       
-    <audio id="audio" src="Assets/background.mp3" preload="auto" loop autoplay></audio>
+      <audio id="audio" src="Assets/background.mp3" preload="auto" loop autoplay></audio>
       
-    <script>
+      <script>
         document.addEventListener('DOMContentLoaded', function() {
           var audio = document.getElementById('audio');
           var audioIcon = document.getElementById('audioIcon');
       
           audio.load();
-          audio.play(); // Start playing the audio
-          
-        });
-
-        //Function to toggle mute state
-          function toggleMute() {
-            if (audio.muted) {
-              audio.muted = false;
-              audioIcon.className = 'fas fa-volume-up'; // Change icon to unmute when audio is not muted
-              audio.play(); // Start playing the audio
-            } else {
-              audio.muted = true;
-              audioIcon.className = 'fas fa-volume-off'; // Change icon to mute when audio is muted
-              audio.pause(); // Pause the audio
-            }
-          }
       
           // Adjust the volume 
           audio.volume = 0.25;
-    </script>
+
+        });
+
+        // Function to toggle play state
+        function togglePlay() {
+            if (audio.paused) {
+              audio.play();
+              audioIcon.className = 'fas fa-play'; // Change icon to play when audio is playing
+            } else {
+              audio.pause();
+              audioIcon.className = 'fas fa-pause'; // Change icon to paused when audio is paused
+            }
+          }
+      </script>
+      
       
       
 
