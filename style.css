@@ -257,7 +257,8 @@ body {
   width: 100%;
   background-color: #1A4019;
 }
-.home-cont .background {
+
+.background {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,43 +269,69 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative; /* Ensure proper positioning of pseudo-element */
 }
-.home-cont .background .title {
-  margin-top: 300px;
+
+.title {
+  margin-top: 10%;
   color: white;
   font-size: 180px;
   font-family: Luxurious Script;
   font-weight: 500px;
   z-index: 1;
+  text-align: center;
 }
-.home-cont .background .date {
+
+.date {
   color: white;
   font-size: 30px;
   font-family: Lustria;
   font-weight: 300px;
   z-index: 1;
 }
-.home-cont .background .description {
+
+.description {
   margin-top: 20px;
   color: white;
   font-size: 20px;
   font-family: Lustria;
   font-weight: 100px;
   z-index: 1;
-  width: auto;
+  width: 80%;
   text-align: center;
 }
-.home-cont .background::before {
+
+.background::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to top, #1A4019, transparent); /* Green to transparent /
-z-index: 1; / Ensure the overlay appears above the background image */
+  background: linear-gradient(to top, #1A4019, transparent);
+  z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: 100px;
+  }
+  .date {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .title {
+    font-size: 60px; /* Adjust font size for smaller screens */
+    white-space: normal; /* Allow line breaks */
+  }
+  .description {
+    font-size: 14px;
+  }
+}
 .jhoAndErn {
   display: flex;
   flex-direction: column;

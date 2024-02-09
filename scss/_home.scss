@@ -3,55 +3,82 @@
   height: auto;
   width: 100%;
   background-color: #1A4019;
+}
 
-  .background {
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-image: url('Assets/homebackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Ensure proper positioning of pseudo-element */
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    background-image: url('Assets/homebackground.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.title {
+  margin-top: 10%;
+  color: white;
+  font-size: 180px;
+  font-family: Luxurious Script;
+  font-weight: 500px;
+  z-index: 1;
+  text-align: center;
+}
 
-    .title {
-      margin-top: 300px;
-      color: white;
-      font-size: 180px;
-      font-family: Luxurious Script;
-      font-weight: 500px;
-      z-index: 1;
-    }
-    .date {
-      color: white;
-      font-size: 30px;
-      font-family: Lustria;
-      font-weight: 300px;
-      z-index: 1;
-    }
-    .description {
-      margin-top: 20px;
-      color: white;
-      font-size: 20px;
-      font-family: Lustria;
-      font-weight: 100px;
-      z-index: 1;
-      width: auto;
-      text-align: center;
-    }
+.date {
+  color: white;
+  font-size: 30px;
+  font-family: Lustria;
+  font-weight: 300px;
+  z-index: 1;
+}
+
+.description {
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: Lustria;
+  font-weight: 100px;
+  z-index: 1;
+  width: 80%;
+  text-align: center;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #1A4019, transparent);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 100px;
   }
-  .background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to top, #1A4019, transparent); /* Green to transparent /
-    z-index: 1; / Ensure the overlay appears above the background image */
 
+  .date {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 60px; /* Adjust font size for smaller screens */
+    white-space: normal; /* Allow line breaks */
+  }
+  .description {
+    font-size: 14px;
   }
 }
