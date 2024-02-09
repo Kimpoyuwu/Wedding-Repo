@@ -248,6 +248,7 @@ body {
   max-width: 2000px;
   margin: 0 auto;
   overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 
 .home-cont {
@@ -308,7 +309,6 @@ z-index: 1; / Ensure the overlay appears above the background image */
   display: flex;
   flex-direction: column;
   height: auto;
-  width: 100%;
   background-color: #1A4019;
 }
 .jhoAndErn .container {
@@ -373,4 +373,290 @@ z-index: 1; / Ensure the overlay appears above the background image */
   font-family: Lustria;
   font-weight: 100px;
   text-align: right;
+}
+
+.about-wedding {
+  display: flex;
+  height: auto;
+  background-color: #e0e0e0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-wedding h1 {
+  color: rgb(31, 31, 31);
+  font-family: Lustria;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 82px;
+  letter-spacing: 5px;
+  text-align: right;
+  margin-top: 80px;
+}
+.about-wedding .main-cont {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-wedding .main-cont .dress-cont {
+  width: 1228px;
+  height: 670px;
+  border-radius: 19px;
+  background: rgb(82, 97, 81);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.about-wedding .main-cont .dress-cont .cont2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-wedding .main-cont .dress-cont .cont2 .attire-title {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 51px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.about-wedding .main-cont .dress-cont .cont2 .attire-men {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-wedding .main-cont .dress-cont .cont2 .attire-men .men-title {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  letter-spacing: 7px;
+  margin-bottom: 20px;
+}
+.about-wedding .main-cont .dress-cont .cont2 .attire-men .rules {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 0px;
+  letter-spacing: 5%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-wedding .main-cont .dress-cont .cont2 .attire-men .avoid {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 0px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-wedding .main-cont .dress-cont .cont2 .attire-lady {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-wedding .main-cont .dress-cont .cont2 .attire-lady .ladies-title {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  letter-spacing: 7px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.about-wedding .main-cont .dress-cont .cont2 .attire-lady .rules {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 0px;
+  letter-spacing: 5%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-wedding .main-cont .dress-cont .cont2 .attire-lady .avoid {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 0px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-wedding .main-cont .dress-cont .cont2 .pallete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.about-wedding .main-cont .dress-cont .cont2 .pallete p {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 40px;
+  padding-left: 25px;
+  margin-top: 20px;
+}
+.about-wedding .main-cont .location {
+  width: 1228px;
+  height: 670px;
+  border-radius: 19px;
+  background: rgb(82, 97, 81);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.about-wedding .main-cont .location .location-title {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-wedding .main-cont .location .location-code {
+  margin-bottom: 20px;
+}
+.about-wedding .main-cont .location .location-code:hover {
+  transform: scale(1.1);
+}
+.about-wedding .main-cont .location .location-name {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: 10px;
+}
+.about-wedding .main-cont .location .time {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: 10px;
+}
+.about-wedding .main-cont .location .address {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 30px;
+}
+.about-wedding .main-cont .location .view-button {
+  width: 279px;
+  height: 65px;
+  border-radius: 11px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-wedding .main-cont .location .view-button a {
+  color: rgb(0, 0, 0);
+  font-family: Lustria;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+.about-wedding .main-cont .location .view-button:hover {
+  transform: scale(1.2);
+}
+.about-wedding .main-cont .send-gift {
+  width: 1228px;
+  height: 670px;
+  border-radius: 19px;
+  background: rgb(82, 97, 81);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.about-wedding .main-cont .send-gift .gift-title {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-wedding .main-cont .send-gift .gift-desc {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-align: center;
+  width: 85%;
+  margin-bottom: 30px;
+}
+.about-wedding .main-cont .send-gift .codes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-wedding .main-cont .send-gift .codes .gcash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 25px;
+}
+.about-wedding .main-cont .send-gift .codes .gcash p {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 5%;
+  text-align: center;
+  text-decoration-line: underline;
+}
+.about-wedding .main-cont .send-gift .codes .bank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 25px;
+}
+.about-wedding .main-cont .send-gift .codes .bank p {
+  color: rgb(255, 255, 255);
+  font-family: Lustria;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 5%;
+  text-align: center;
+  text-decoration-line: underline;
 }/*# sourceMappingURL=style.css.map */

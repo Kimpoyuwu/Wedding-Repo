@@ -253,8 +253,10 @@ body{
     max-width: 2000px;
     margin: 0 auto;
     overflow-x: hidden !important;
+    overflow-y: hidden !important;
 
 }
 
 @import "scss/home";
 @import "scss/jhoAndErn";
+@import "scss/aboutwedding";

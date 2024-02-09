@@ -8,9 +8,13 @@
   <!--FAVICON-->
   <link rel="icon" type="image/x-icon" href="Assets/logo.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
+    
+
     <!--NAVBAR SECTION-->
     <header>
         <div class="limiter">
@@ -24,7 +28,7 @@
                 <ul class="navlinks" id="links" >
                     <li class="navitems" ><a href="#home" id="Home" class="itemlinks active">Home</a></li>
                     <li class="navitems"><a href="#JhoAndErn" id="jhoAndErn" class="itemlinks">Jho & Ern</a></li>
-                    <li class="navitems"><a href="#" id="Learn" class="itemlinks">About Wedding</a></li>
+                    <li class="navitems"><a href="#about-wedding" id="About-wedding" class="itemlinks">About Wedding</a></li>
                     <li class="navitems"><a href="#" id="Aboutus" class="itemlinks">Messages</a></li>
 
                 </ul>
@@ -38,7 +42,7 @@
         </div>
     </header>
 
-
+    
 
     <!--HOME SECTION-->
     <div class="home-cont" id="home">
@@ -98,21 +102,144 @@
 
     <!--ABOUT WEDDING SECTION-->
 
-    <div class="about-wedding">
+    <div class="about-wedding" id="about-wedding">
+        <h1 data-aos="fade-up" data-aos-duration="500">ABOUT THE WEDDING</h1>
         <div class="main-cont">
-            <div class="dress-cont">
+            
+            <!--Dress code-->
+            <div class="dress-cont" data-aos="fade-up" data-aos-duration="500">
                 <div class="cont1">
-
+                    <img src="Assets/men.png" alt="" data-aos="flip-left" data-aos-duration="1000">
                 </div>
-                <div class="cont2">
+                <div class="cont2" >
+                    <div class="attire-title" data-aos="fade-up" data-aos-duration="1000">
+                        <p data-aos="fade-up" data-aos-duration="1000">ATTIRE: STRICTLY FORMAL</p>
+                    </div>
+                    <div class="attire-men" data-aos="fade-up" data-aos-duration="1000">
+                        <p class="men-title" >GENTLEMEN</p>
+                        <p class="rules" >COAT & TIE OR LONG SLEEVES</p>
+                        <p class="avoid" >NO WEARING OF TSHIRTS / POLO SHIRTS / JEANS</p>
+                    </div>
+                    <div class="attire-lady" data-aos="fade-up" data-aos-duration="1000">
+                        <p class="ladies-title" >LADIES</p>
+                        <p class="rules" >GOWN / DRESS</p>
+                        <p class="avoid" >STRICTLY NO WHITE DRESS / GOWN</p>
+                    </div>
+
+                    <div class="pallete" data-aos="fade-up" data-aos-duration="1000" >
+                        <img src="Assets/pallet.png" alt="" >
+                        <p>PALLETE</p>
+                    </div>
 
                 </div>
                 <div class="cont3">
-
+                    <img src="Assets/lady.png" alt="" data-aos="flip-right" data-aos-duration="1000">
                 </div>
             </div>
+            
+            <!--Location-->
+            <div class="location" data-aos="fade-up" data-aos-duration="500">
+                <div class="location-title"  data-aos="slide-up" data-aos-duration="1000">
+                    HOW TO GET THERE?
+                </div>
+
+                <div class="location-code" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="Assets/location.png" alt="" >
+                </div>
+
+                <div class="location-name" data-aos="fade-up" data-aos-duration="1000">
+                    CLUB FILIPINO
+                </div>
+
+                <div class="time" data-aos="fade-up" data-aos-duration="1000">
+                    - 4:00 PM - 
+                </div>
+
+                <div class="address" data-aos="fade-up" data-aos-duration="1000">
+                    CORNER EISENTOWER ST. CLUB FILIPINO AVENUE, SAN JUAN, 1502 METRO MANILA
+                </div>
+
+                <div class="view-button" data-aos="zoom-in" data-aos-duration="1000">
+                    <a href="https://maps.app.goo.gl/GUkHrKYUPQt5EEmH7" target="_blank">VIEW LOCATION</a>
+                </div>
+
+            </div>
+
+            <!--Send gift-->
+            <div class="send-gift">
+                <div class="gift-title">
+                    SEND A GIFT
+                </div>
+
+                <div class="gift-desc">
+                    Your attendance and prayers would mean the world to us on our wedding day. 
+                    We don't require or anticipate any other gifts. However, if you feel inclined to express your 
+                    love in a monetary way, we would be grateful, as it would only add to our joy.
+                </div>
+                
+                <div class="codes">
+                    <div class="gcash">
+                        <img src="Assets/gcash.png" alt="">
+                        <p>GCASH</p>
+                    </div>
+    
+                    <div class="bank">
+                        <img src="Assets/bank.png" alt="">
+                        <p>UNION BANK</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
         </div>
     </div>
+
+    <style>
+        /* Styling for the toggle icon */
+        .audio-toggle {
+          width: 50px;
+          height: 50px;
+          background-color: #ccc;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 9999; /* Ensure it's above other content */
+        }
+    
+        .audio-toggle i {
+          color: #333;
+        }
+    
+      </style>
+
+    <div class="audio-toggle" onclick="toggleMute()">
+        <i id="audioIcon" class="fas fa-volume-up"></i>
+    </div>
+    
+      <audio id="audio" src="Assets/IU - Love wins all  Piano Cover by Pianella Piano.mp3" loop autoplay></audio>
+    
+    <script>
+        function toggleMute() {
+          var audio = document.getElementById('audio');
+          var audioIcon = document.getElementById('audioIcon');
+          if (audio.muted) {
+            audio.muted = false;
+            audioIcon.className = 'fas fa-volume-up'; // Change icon to unmute when audio is not muted
+          } else {
+            audio.muted = true;
+            audioIcon.className = 'fas fa-volume-off'; // Change icon to mute when audio is muted
+          }
+        }
+
+        document.getElementById('audio').volume = 0.2;
+    </script>
 
 
     
