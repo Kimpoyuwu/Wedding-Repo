@@ -14,7 +14,7 @@
         font-weight: 400;
         line-height: 82px;
         letter-spacing: 5px;
-        text-align: right;
+        text-align: center;
 
         margin-top: 80px;
         }
@@ -61,6 +61,10 @@
                     
                     margin-top: 10px;
                     margin-bottom: 40px;
+
+                    p{
+                        width: 100%;
+                    }
                 }
 
                 .attire-men{
@@ -979,7 +983,7 @@
 
         .main-cont{
             .dress-cont{
-                width: 416px;
+                width: 365px;
                 height: 289px;
                 .cont1{
                     margin-right: -145px;
@@ -1039,6 +1043,94 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width:380px){
+    .about-wedding{
+        h1{
+            font-size: 25px;
+            margin-bottom: -120px;
+        }
+
+        .main-cont{
+            h1{
+                font-size: 23px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .dress-cont{
+                width: 328px;
+                height: 289px;
+                .cont1{
+                    margin-right: -163px;
+                    
+                }
+                .cont3{
+                    margin-left: -163px;
+                    
+                }
+                .cont2{
+                    .attire-title{
+                    
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                    }
+                    .attire-men{
+                        .men-title{
+                            
+                            margin-bottom: -7px;
+                        }
+                        .rules{
+                            font-size: 13px;
+                            margin-bottom: -8px
+                        }
+                        .avoid{
+                            font-size: 10px;
+                            width: 55%;
+                        }
+                    }
+                    .attire-lady{
+                        .ladies-title{
+                            margin-top: 44px;
+                            margin-bottom: 6px;
+                            font-size: 18px;
+                            
+                        }
+                        .rules{
+                            font-size: 13px;
+                            margin-bottom: 2px
+                        }
+                        .avoid{
+                            margin-bottom: -7px;
+                            font-size: 10px;
+                            width: 60%;
+                            line-height: 10px;
+                            margin-top: 10px;
+                            
+                        }
+                    }
+                    .pallete{
+                        p{
+                            font-size: 12px;
+                            margin-top: -34px;
+                        }
+                        img{
+                            transform: scale(.4);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:350px){
+    .about-wedding{
+        h1{
+            line-height: 40px;
         }
     }
 }
