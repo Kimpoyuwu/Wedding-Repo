@@ -723,7 +723,7 @@ body {
 }
 .about-wedding .main-cont .dress-cont .cont2 .attire-lady .rules {
   color: rgb(255, 255, 255);
-  font-family: Lustria, sans-serif;
+  font-family: Lustria;
   font-size: 30px;
   font-weight: 400;
   line-height: 0px;
@@ -750,7 +750,7 @@ body {
 }
 .about-wedding .main-cont .dress-cont .cont2 .pallete p {
   color: rgb(255, 255, 255);
-  font-family: Lustria, sans-serif;
+  font-family: Lustria;
   font-size: 24px;
   font-weight: 400;
   line-height: 31px;
@@ -803,7 +803,7 @@ body {
 }
 .about-wedding .main-cont .location .address {
   color: rgb(255, 255, 255);
-  font-family: Lustria, sans-serif;
+  font-family: Lustria;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 10px;
@@ -882,7 +882,7 @@ body {
 }
 .about-wedding .main-cont .send-gift .codes .gcash p {
   color: rgb(255, 255, 255);
-  font-family: Lustria, sans-serif;
+  font-family: Lustria;
   font-size: 32px;
   font-weight: 400;
   line-height: 41px;
@@ -1059,7 +1059,7 @@ body {
 }
 @media (max-width: 715px) {
   .about-wedding h1 {
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: -86px;
   }
   .about-wedding .main-cont .dress-cont {
@@ -1110,6 +1110,276 @@ body {
     letter-spacing: 17px;
   }
 }
+@media (max-width: 648px) {
+  .about-wedding h1 {
+    font-size: 40px;
+    margin-bottom: -86px;
+  }
+  .about-wedding .main-cont .dress-cont {
+    width: 555px;
+    height: 408px;
+  }
+  .about-wedding .main-cont .dress-cont .cont1 {
+    margin-right: -70px;
+  }
+  .about-wedding .main-cont .dress-cont .cont1 img {
+    transform: scale(0.4);
+  }
+  .about-wedding .main-cont .dress-cont .cont3 {
+    margin-left: -70px;
+  }
+  .about-wedding .main-cont .dress-cont .cont3 img {
+    transform: scale(0.4);
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-title {
+    font-size: 22px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .men-title {
+    font-size: 20px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .rules {
+    font-size: 19px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .avoid {
+    font-size: 12px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .ladies-title {
+    margin-bottom: 17px;
+    font-size: 20px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .rules {
+    font-size: 19px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .avoid {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .pallete img {
+    transform: scale(0.4);
+  }
+}
+@media (max-width: 575px) {
+  .about-wedding h1 {
+    font-size: 33px;
+    margin-bottom: -86px;
+  }
+  .about-wedding .main-cont .dress-cont {
+    width: 473px;
+    height: 326px;
+  }
+  .about-wedding .main-cont .dress-cont .cont1 {
+    margin-right: -100px;
+  }
+  .about-wedding .main-cont .dress-cont .cont1 img {
+    transform: scale(0.3);
+  }
+  .about-wedding .main-cont .dress-cont .cont3 {
+    margin-left: -100px;
+  }
+  .about-wedding .main-cont .dress-cont .cont3 img {
+    transform: scale(0.3);
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-title {
+    margin-top: -18px;
+    font-size: 20px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .men-title {
+    font-size: 18px;
+    margin-bottom: -7px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .rules {
+    font-size: 17px;
+    margin-bottom: -8px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .avoid {
+    font-size: 10px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .ladies-title {
+    margin-top: 44px;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .rules {
+    font-size: 17px;
+    margin-bottom: 2px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .avoid {
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .pallete p {
+    font-size: 12px;
+    margin-top: -34px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .pallete img {
+    transform: scale(0.4);
+  }
+}
+@media (max-width: 575px) {
+  .about-wedding h1 {
+    font-size: 33px;
+    margin-bottom: -86px;
+  }
+  .about-wedding .main-cont .dress-cont {
+    width: 473px;
+    height: 326px;
+  }
+  .about-wedding .main-cont .dress-cont .cont1 {
+    margin-right: -100px;
+  }
+  .about-wedding .main-cont .dress-cont .cont1 img {
+    transform: scale(0.3);
+  }
+  .about-wedding .main-cont .dress-cont .cont3 {
+    margin-left: -100px;
+  }
+  .about-wedding .main-cont .dress-cont .cont3 img {
+    transform: scale(0.3);
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-title {
+    margin-top: -18px;
+    font-size: 20px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .men-title {
+    font-size: 18px;
+    margin-bottom: -7px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .rules {
+    font-size: 17px;
+    margin-bottom: -8px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .avoid {
+    font-size: 10px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .ladies-title {
+    margin-top: 44px;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .rules {
+    font-size: 17px;
+    margin-bottom: 2px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .avoid {
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .pallete p {
+    font-size: 12px;
+    margin-top: -34px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .pallete img {
+    transform: scale(0.4);
+  }
+}
+@media (max-width: 485px) {
+  .about-wedding h1 {
+    font-size: 30px;
+    margin-bottom: -120px;
+  }
+  .about-wedding .main-cont .dress-cont {
+    width: 416px;
+    height: 289px;
+  }
+  .about-wedding .main-cont .dress-cont .cont1 {
+    margin-right: -130px;
+  }
+  .about-wedding .main-cont .dress-cont .cont3 {
+    margin-left: -130px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .men-title {
+    margin-bottom: -7px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .rules {
+    margin-bottom: -8px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .avoid {
+    font-size: 10px;
+    width: 70%;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .ladies-title {
+    margin-top: 44px;
+    margin-bottom: 6px;
+    font-size: 18px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .rules {
+    font-size: 17px;
+    margin-bottom: 2px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .avoid {
+    margin-bottom: 5px;
+    font-size: 10px;
+    width: 60%;
+    line-height: 10px;
+    margin-top: 10px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .pallete p {
+    font-size: 12px;
+    margin-top: -34px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .pallete img {
+    transform: scale(0.4);
+  }
+}
+@media (max-width: 432px) {
+  .about-wedding h1 {
+    font-size: 25px;
+    margin-bottom: -120px;
+  }
+  .about-wedding .main-cont .dress-cont {
+    width: 416px;
+    height: 289px;
+  }
+  .about-wedding .main-cont .dress-cont .cont1 {
+    margin-right: -145px;
+  }
+  .about-wedding .main-cont .dress-cont .cont3 {
+    margin-left: -145px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .men-title {
+    margin-bottom: -7px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .rules {
+    font-size: 15px;
+    margin-bottom: -8px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-men .avoid {
+    font-size: 10px;
+    width: 63%;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .ladies-title {
+    margin-top: 44px;
+    margin-bottom: 6px;
+    font-size: 18px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .rules {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-lady .avoid {
+    margin-bottom: -7px;
+    font-size: 10px;
+    width: 60%;
+    line-height: 10px;
+    margin-top: 10px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .pallete p {
+    font-size: 12px;
+    margin-top: -34px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .pallete img {
+    transform: scale(0.4);
+  }
+}
 .message-main {
   display: flex;
   height: auto;
@@ -1132,7 +1402,7 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
   color: rgb(0, 0, 0);
-  font-family: Lustria, sans-serif;
+  font-family: Lustria;
   font-size: 33px;
   font-weight: 400;
   line-height: 42px;
