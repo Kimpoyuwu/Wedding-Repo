@@ -9,7 +9,7 @@
 
     h1{
         color: rgb(31, 31, 31);
-        font-family: Lustria;
+        font-family: Lustria, sans-serif;
         font-size: 64px;
         font-weight: 400;
         line-height: 82px;
@@ -54,7 +54,7 @@
                 .attire-title{
                     
                     color: rgb(255, 255, 255);
-                    font-family: Lustria;
+                    font-family: Lustria,  sans-serif;
                     font-size: 40px;
                     font-weight: 400;
                     line-height: 51px;
@@ -71,7 +71,7 @@
 
                     .men-title{
                         color: rgb(255, 255, 255);
-                        font-family: Lustria;
+                        font-family: Lustria, sans-serif;
                         font-size: 32px;
                         font-weight: 400;
                         
@@ -84,7 +84,7 @@
 
                     .rules{
                         color: rgb(255, 255, 255);
-                        font-family: Lustria;
+                        font-family: Lustria, sans-serif;
                         font-size: 30px;
                         font-weight: 400;
                         line-height: 0px;
@@ -97,10 +97,9 @@
 
                     .avoid{
                         color: rgb(255, 255, 255);
-                        font-family: Lustria;
+                        font-family: Lustria, sans-serif;
                         font-size: 16px;
                         font-weight: 400;
-                        line-height: 0px;
                         letter-spacing: 5px;
                         text-align: center;
 
@@ -117,7 +116,7 @@
 
                     .ladies-title{
                         color: rgb(255, 255, 255);
-                        font-family: Lustria;
+                        font-family: Lustria, sans-serif;
                         font-size: 32px;
                         font-weight: 400;
                         
@@ -131,7 +130,7 @@
 
                     .rules{
                         color: rgb(255, 255, 255);
-                        font-family: Lustria;
+                        font-family: Lustria,  sans-serif;
                         font-size: 30px;
                         font-weight: 400;
                         line-height: 0px;
@@ -144,7 +143,7 @@
 
                     .avoid{
                         color: rgb(255, 255, 255);
-                        font-family: Lustria;
+                        font-family: Lustria, sans-serif;
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 0px;
@@ -164,7 +163,7 @@
                     margin-top: 50px;
                     p{
                         color: rgb(255, 255, 255);
-                        font-family: Lustria;
+                        font-family: Lustria,  sans-serif;
                         font-size: 24px;
                         font-weight: 400;
                         line-height: 31px;
@@ -203,7 +202,7 @@
 
             .location-title{
                 color: rgb(255, 255, 255);
-                font-family: Lustria;
+                font-family: Lustria, sans-serif;
                 font-size: 50px;
                 font-weight: 400;
                 line-height: 51px;
@@ -222,7 +221,7 @@
 
             .location-name{
                 color: rgb(255, 255, 255);
-                font-family: Lustria;
+                font-family: Lustria, sans-serif;
                 font-size: 40px;
                 font-weight: 400;
                 line-height: 51px;
@@ -232,7 +231,7 @@
 
             .time{
                 color: rgb(255, 255, 255);
-                font-family: Lustria;
+                font-family: Lustria, sans-serif;
                 font-size: 28px;
                 font-weight: 400;
                 line-height: 51px;
@@ -242,7 +241,7 @@
             .address{
 
                 color: rgb(255, 255, 255);
-                font-family: Lustria;
+                font-family: Lustria,sans-serif;
                 font-size: 18px;
                 font-weight: 400;
                 letter-spacing: 10px;
@@ -266,7 +265,7 @@
 
                 a{
                     color: rgb(0, 0, 0);
-                    font-family: Lustria;
+                    font-family: Lustria, sans-serif;
                     font-size: 18px;
                     font-weight: 400;
                     line-height: 41px;
@@ -295,7 +294,7 @@
 
             .gift-title{
                 color: rgb(255, 255, 255);
-                font-family: Lustria;
+                font-family: Lustria, sans-serif;
                 font-size: 50px;
                 font-weight: 400;
                 line-height: 51px;
@@ -307,7 +306,7 @@
 
             .gift-desc{
                 color: rgb(255, 255, 255);
-                font-family: Lustria;
+                font-family: Lustria, sans-serif;
                 font-size: 18px;
                 font-weight: 400;
                 letter-spacing: 10px;
@@ -338,7 +337,7 @@
                     p{
                         
                         color: rgb(255, 255, 255);
-                        font-family: Lustria;
+                        font-family: Lustria,  sans-serif;
                         font-size: 32px;
                         font-weight: 400;
                         line-height: 41px;
@@ -364,7 +363,7 @@
                     p{
                         
                         color: rgb(255, 255, 255);
-                        font-family: Lustria;
+                        font-family: Lustria, sans-serif;
                         font-size: 32px;
                         font-weight: 400;
                         line-height: 41px;
@@ -379,3 +378,100 @@
         }
     }
 }
+
+@media (max-width: 1284px) {
+    .about-wedding{
+        .main-cont{
+            .dress-cont{
+                width: 1166px;
+                height: 646px;
+
+                .cont2{
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1243px) {
+    .about-wedding{
+        .main-cont{
+            .dress-cont{
+                width: 1131px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1183px) {
+    .about-wedding{
+        .main-cont{
+            .dress-cont{
+                width: 1000px;
+
+                .cont1{
+                    img{
+                        transform: scale(.8);
+                    }
+                }
+                .cont2{
+                    .attire-title{
+                        text-align: center;
+                    }
+                    .attire-men{
+                        
+                    }
+                    .pallete{
+                        
+                        img{
+                            transform: scale(.9);
+                        }
+                    }
+                }
+                .cont3{
+                    img{
+                        transform: scale(.8);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1183px) {
+    .about-wedding{
+        .main-cont{
+            .dress-cont{
+                width: 1000px;
+
+                .cont1{
+                    img{
+                        transform: scale(.8);
+                    }
+                }
+                .cont2{
+                    .attire-title{
+                        
+                    }
+                    .attire-men{
+                        
+                    }
+                    .pallete{
+                        
+                        img{
+                            transform: scale(.9);
+                        }
+                    }
+                }
+                .cont3{
+                    img{
+                        transform: scale(.8);
+                    }
+                }
+            }
+        }
+    }
+}
+
+

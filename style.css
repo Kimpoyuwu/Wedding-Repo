@@ -82,11 +82,11 @@ li.navitems {
 }
 
 .navlinks .itemlinks {
-  font-family: "Lustria", sans-serif;
+  font-family: Lustria, sans-serif;
   color: white;
   text-decoration: none;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -360,7 +360,7 @@ body {
 .jhoAndErn .container .right-cont .caption {
   color: white;
   font-size: 40px;
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-weight: 100px;
 }
 .jhoAndErn .container .left-cont {
@@ -397,7 +397,7 @@ body {
 .jhoAndErn .container1 .left-cont .caption {
   color: white;
   font-size: 40px;
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-weight: 100px;
   text-align: right;
 }
@@ -433,7 +433,7 @@ body {
   }
   .jhoAndErn .container .right-cont {
     width: 90%;
-    text-align: justify;
+    text-align: center;
   }
   .jhoAndErn .container .left-cont {
     width: 90%;
@@ -518,7 +518,7 @@ body {
     width: 90%;
   }
   .jhoAndErn .container1 .left-cont .caption {
-    text-align: justify;
+    text-align: center;
   }
   .jhoAndErn .container1 .right-cont {
     width: 90%;
@@ -556,6 +556,70 @@ body {
     font-size: 30px;
   }
 }
+@media (max-width: 424px) {
+  .jhoAndErn .container .left-cont {
+    margin-top: -160px;
+  }
+  .jhoAndErn .container .left-cont img {
+    transform: scale(0.6);
+  }
+  .jhoAndErn .container .left-cont img:hover {
+    transform: scale(0.65);
+  }
+  .jhoAndErn .container .right-cont {
+    margin-top: -116px;
+  }
+  .jhoAndErn .container .right-cont .caption {
+    font-size: 23px;
+    text-align: center;
+  }
+}
+@media (max-width: 424px) {
+  .jhoAndErn .container1 .right-cont {
+    margin-top: -170px;
+  }
+  .jhoAndErn .container1 .right-cont img {
+    transform: scale(0.6);
+  }
+  .jhoAndErn .container1 .right-cont img:hover {
+    transform: scale(0.65);
+  }
+  .jhoAndErn .container1 .left-cont {
+    margin-top: -116px;
+  }
+  .jhoAndErn .container1 .left-cont .caption {
+    font-size: 23px;
+    text-align: center;
+  }
+}
+@media (max-width: 385px) {
+  .jhoAndErn .container .left-cont img {
+    transform: scale(0.5);
+  }
+  .jhoAndErn .container .left-cont img:hover {
+    transform: scale(0.55);
+  }
+  .jhoAndErn .container .right-cont {
+    margin-top: -125px;
+  }
+  .jhoAndErn .container .right-cont .caption {
+    font-size: 20px;
+  }
+}
+@media (max-width: 385px) {
+  .jhoAndErn .container1 .right-cont img {
+    transform: scale(0.5);
+  }
+  .jhoAndErn .container1 .right-cont img:hover {
+    transform: scale(0.55);
+  }
+  .jhoAndErn .container1 .left-cont {
+    margin-top: -125px;
+  }
+  .jhoAndErn .container1 .left-cont .caption {
+    font-size: 20px;
+  }
+}
 .about-wedding {
   display: flex;
   height: auto;
@@ -566,7 +630,7 @@ body {
 }
 .about-wedding h1 {
   color: rgb(31, 31, 31);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 64px;
   font-weight: 400;
   line-height: 82px;
@@ -600,7 +664,7 @@ body {
 }
 .about-wedding .main-cont .dress-cont .cont2 .attire-title {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 51px;
@@ -615,7 +679,7 @@ body {
 }
 .about-wedding .main-cont .dress-cont .cont2 .attire-men .men-title {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 32px;
   font-weight: 400;
   text-decoration-line: underline;
@@ -624,7 +688,7 @@ body {
 }
 .about-wedding .main-cont .dress-cont .cont2 .attire-men .rules {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 0px;
@@ -634,10 +698,9 @@ body {
 }
 .about-wedding .main-cont .dress-cont .cont2 .attire-men .avoid {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 0px;
   letter-spacing: 5px;
   text-align: center;
   margin-bottom: 20px;
@@ -650,7 +713,7 @@ body {
 }
 .about-wedding .main-cont .dress-cont .cont2 .attire-lady .ladies-title {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 32px;
   font-weight: 400;
   text-decoration-line: underline;
@@ -660,7 +723,7 @@ body {
 }
 .about-wedding .main-cont .dress-cont .cont2 .attire-lady .rules {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 0px;
@@ -670,7 +733,7 @@ body {
 }
 .about-wedding .main-cont .dress-cont .cont2 .attire-lady .avoid {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 0px;
@@ -687,7 +750,7 @@ body {
 }
 .about-wedding .main-cont .dress-cont .cont2 .pallete p {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 31px;
@@ -708,7 +771,7 @@ body {
 }
 .about-wedding .main-cont .location .location-title {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 51px;
@@ -724,7 +787,7 @@ body {
 }
 .about-wedding .main-cont .location .location-name {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 51px;
@@ -732,7 +795,7 @@ body {
 }
 .about-wedding .main-cont .location .time {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 51px;
@@ -740,7 +803,7 @@ body {
 }
 .about-wedding .main-cont .location .address {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 10px;
@@ -761,7 +824,7 @@ body {
 }
 .about-wedding .main-cont .location .view-button a {
   color: rgb(0, 0, 0);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 41px;
@@ -784,7 +847,7 @@ body {
 }
 .about-wedding .main-cont .send-gift .gift-title {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 51px;
@@ -794,7 +857,7 @@ body {
 }
 .about-wedding .main-cont .send-gift .gift-desc {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 10px;
@@ -819,7 +882,7 @@ body {
 }
 .about-wedding .main-cont .send-gift .codes .gcash p {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 41px;
@@ -840,7 +903,7 @@ body {
 }
 .about-wedding .main-cont .send-gift .codes .bank p {
   color: rgb(255, 255, 255);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 41px;
@@ -850,6 +913,51 @@ body {
   margin-top: 15px;
 }
 
+@media (max-width: 1284px) {
+  .about-wedding .main-cont .dress-cont {
+    width: 1166px;
+    height: 646px;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 {
+    width: auto;
+  }
+}
+@media (max-width: 1243px) {
+  .about-wedding .main-cont .dress-cont {
+    width: 1131px;
+  }
+}
+@media (max-width: 1183px) {
+  .about-wedding .main-cont .dress-cont {
+    width: 1000px;
+  }
+  .about-wedding .main-cont .dress-cont .cont1 img {
+    transform: scale(0.8);
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .attire-title {
+    text-align: center;
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .pallete img {
+    transform: scale(0.9);
+  }
+  .about-wedding .main-cont .dress-cont .cont3 img {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 1183px) {
+  .about-wedding .main-cont .dress-cont {
+    width: 1000px;
+  }
+  .about-wedding .main-cont .dress-cont .cont1 img {
+    transform: scale(0.8);
+  }
+  .about-wedding .main-cont .dress-cont .cont2 .pallete img {
+    transform: scale(0.9);
+  }
+  .about-wedding .main-cont .dress-cont .cont3 img {
+    transform: scale(0.8);
+  }
+}
 .message-main {
   display: flex;
   height: auto;
@@ -872,7 +980,7 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
   color: rgb(0, 0, 0);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 33px;
   font-weight: 400;
   line-height: 42px;
@@ -893,7 +1001,7 @@ body {
   border-radius: 13px;
   padding: 10px;
   margin-bottom: 40px;
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 29px;
   font-weight: 400;
   line-height: 37px;
@@ -921,7 +1029,7 @@ body {
   background: rgb(124, 156, 119);
   border: none;
   color: rgb(0, 0, 0);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 31px;
   font-weight: 400;
   line-height: 40px;
@@ -951,7 +1059,7 @@ body {
 }
 .message-main .message-cont .comment-section .comment-cont .comments .user-name {
   color: rgb(26, 64, 25);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 31px;
   font-weight: 400;
   line-height: 40px;
@@ -960,7 +1068,7 @@ body {
 }
 .message-main .message-cont .comment-section .comment-cont .comments .user-message {
   color: rgb(48, 48, 48);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
@@ -990,7 +1098,7 @@ body {
   justify-content: center;
   align-items: center;
   color: rgb(48, 48, 48);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 28px;
@@ -1003,7 +1111,7 @@ body {
 .footer .footer-cont a {
   margin-left: 20px;
   color: rgb(48, 48, 48);
-  font-family: Lustria;
+  font-family: Lustria, sans-serif;
   font-size: 25px;
   font-weight: 400;
   line-height: 28px;

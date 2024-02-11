@@ -29,7 +29,7 @@
             .caption{
                 color: white;
                 font-size: 40px;
-                font-family: Lustria;
+                font-family: Lustria, sans-serif;
                 font-weight: 100px;
             }
         
@@ -87,7 +87,7 @@
             .caption{
                 color: white;
                 font-size: 40px;
-                font-family: Lustria;
+                font-family: Lustria, sans-serif;
                 font-weight: 100px;
                 text-align: right;
             }
@@ -151,7 +151,7 @@
 
             .right-cont{
                 width: 90%;
-                text-align: justify;
+                text-align: center;
             }
             .left-cont{
                 width: 90%;
@@ -284,7 +284,7 @@
             .left-cont{
                 width: 90%;
                 .caption{
-                    text-align: justify;
+                    text-align: center;
                 }
             }
             .right-cont{
@@ -341,6 +341,97 @@
                 margin-top: -50px;
                 .caption{
                     font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 424px){
+    .jhoAndErn{
+       
+        .container{
+            .left-cont{
+                margin-top: -160px;
+                img{
+                    transform: scale(.6);
+                }
+                img:hover{
+                    transform: scale(.65);
+                }
+            }
+            .right-cont{
+                margin-top: -116px;
+                .caption{
+                    font-size: 23px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 424px){
+    .jhoAndErn{
+        .container1{
+            .right-cont{
+                margin-top: -170px;
+                img{
+                    transform: scale(.6);
+                }
+                img:hover{
+                    transform: scale(.65);
+                }
+            }
+            .left-cont{
+                margin-top: -116px;
+                .caption{
+                    font-size: 23px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 385px){
+    .jhoAndErn{
+        .container{
+            .left-cont{
+                
+                img{
+                    transform: scale(.5);
+                }
+                img:hover{
+                    transform: scale(.55);
+                }
+            }
+            .right-cont{
+                margin-top: -125px;
+                .caption{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 385px){
+    .jhoAndErn{
+        .container1{
+            .right-cont{
+                
+                img{
+                    transform: scale(.5);
+                }
+                img:hover{
+                    transform: scale(.55);
+                }
+            }
+            .left-cont{
+                margin-top: -125px;
+                .caption{
+                    font-size: 20px;
                 }
             }
         }
