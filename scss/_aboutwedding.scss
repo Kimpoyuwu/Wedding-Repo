@@ -576,7 +576,7 @@
         .main-cont{
             .dress-cont{
                 width: 680px;
-                height: 520px;
+                height: 580px;
                 .cont1{
                     margin-right: -50px;
                 }
@@ -1131,6 +1131,313 @@
     .about-wedding{
         h1{
             line-height: 40px;
+        }
+    }
+}
+
+@media (max-width: 1284px){
+    .about-wedding{
+        .main-cont{
+            .location{
+                width: 1166px;
+                height: 646px;
+            }
+        }
+    }
+}
+
+@media (max-width:335px){
+    .about-wedding{
+        .main-cont{
+            .dress-cont{
+                width: 306px;
+                height: 306px;
+                .cont1{
+                    img{
+                        transform: scale(.22);
+                    }
+                }
+                .cont3{
+                    img{
+                        transform: scale(.22);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1243px){
+    .about-wedding{
+        .main-cont{
+            .location{
+                width: 1131px;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 1183px){
+    .about-wedding{
+        .main-cont{
+            .location{
+                width: 1000px;
+                
+                .location-title{
+                    font-size: 45px;
+                }
+                .view-button{
+                    transform: scale(.9);
+                }
+                .view-button:hover{
+                    transform: scale(1);
+                }
+
+                .location-name{
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1015px){
+    .about-wedding{
+        .main-cont{
+            .location{
+                width: 825px;
+            }
+        }
+    }
+}
+
+@media (max-width: 883px){
+    .about-wedding{
+        .main-cont{
+            .location{
+                width: 680px;
+                height: 660px;
+                .location-title{
+                    margin-bottom: 5px;
+                }
+                .location-code{
+                    transform: scale(.9);
+                }
+                .location-code:hover{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:715px){
+    .about-wedding{
+        .main-cont{
+            .location{
+                width: 613px;
+                height: 579px;
+
+                .location-code{
+                    margin-bottom: -12px;
+                }
+                .location-title{
+                    font-size: 40px;
+                }
+                .view-button{
+                    transform: scale(.8);
+                }
+                .view-button:hover{
+                    transform: scale(.9);
+                }
+    
+                .location-name{
+                    font-size: 33px;
+                    margin-bottom: -22px
+                }
+                .time{
+                    font: 24px;
+                }
+                .address{
+                    font-size: 15px;
+                    margin-bottom: 18px;
+                }
+                
+            }
+           
+        }
+    }
+}
+
+@media (max-width:648px){
+    .about-wedding{
+        .main-cont{
+            .location{
+                width: 555px;
+                .location-title{
+                    font-size: 37px;
+                    margin-bottom: -5px;
+                }
+                .location-code{
+                    transform: scale(.8);
+                    margin-bottom: -27px;
+                }
+                .location-code:hover{
+                    transform: scale(.85);
+                }
+                .location-name{
+                    font-size: 30px;
+                }
+                .time{
+                    font-size: 25px;
+                }
+                .address{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:575px){
+    .about-wedding{
+        .main-cont{
+            .location{
+                width: 473px;
+                height: 518px;
+
+                .location-code{
+                    transform: scale(.65);
+                }
+                .location-code:hover{
+                    transform: scale(.7);
+                }
+                .location-title{
+                    font-size: 32px;
+                    margin-bottom: -25px;
+                }
+                .location-name{
+                    
+                    font-size: 27px;
+                    
+                }
+                .time{
+                    font-size: 20px;
+                    margin-bottom: -10px;
+                }
+                .address{
+                    font-size: 12px;
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:485px){
+    .about-wedding{
+        .main-cont{
+            .location{
+                .view-button{
+                    transform: scale(.6);
+                }
+                .view-button:hover{
+                    transform: scale(.7);
+                }
+                width: 416px;
+                height: 453px;
+                .location-title{
+                    font-size: 28px;
+                    margin-bottom: -38px;
+                }
+                .location-code{
+                    margin-bottom: -49px;
+                }
+                .address{
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:432px){
+    .about-wedding{
+        .main-cont{
+            .location{
+                .view-button{
+                    transform: scale(.6);
+                }
+                .view-button:hover{
+                    transform: scale(.7);
+                }
+                width: 365px;
+                height: 423px;
+                .location-title{
+                    font-size: 24px;
+                    margin-bottom: -38px;
+                }
+                .location-name{
+                    font-size: 20px;
+                }
+                .location-code{
+                    margin-bottom: -49px;
+                }
+                .time{
+                    font-size: 17px;
+                }
+                .address{
+                    font-size: 9px;
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:380px){
+    .about-wedding{
+        .main-cont{
+            .location{
+                .view-button{
+                    transform: scale(.55);
+                }
+                .view-button:hover{
+                    transform: scale(.6);
+                }
+                width: 328px;
+                height: 423px;
+                .location-title{
+                    font-size: 20px;
+                    margin-bottom: -38px;
+                }
+                .location-name{
+                    font-size: 18px;
+                }
+                .location-code{
+                    margin-bottom: -49px;
+                }
+                .time{
+                    font-size: 17px;
+                }
+                .address{
+                    font-size: 8px;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:335px){
+    .about-wedding{
+        .main-cont{
+            .location{
+                width: 306px;
+                height: 412px;
+            }
         }
     }
 }

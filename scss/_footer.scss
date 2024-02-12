@@ -6,12 +6,9 @@
     .footer-cont{
         margin-top: 40px;
         margin-bottom: 60px;
-        
-
         display: flex;
         justify-content: center;
         align-items: center;
-
         color: rgb(48, 48, 48);
         font-family: Lustria;
         font-size: 28px;
@@ -33,5 +30,23 @@
             letter-spacing: 4%;
             text-align: left;
         }
+    }
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .footer-cont {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-cont img {
+        margin: 0; /* Remove margin for image */
+        margin-bottom: 10px; /* Add some space below the image */
+    }
+
+    .footer-cont a {
+        margin: 0; /* Remove margin for anchor tag */
     }
 }

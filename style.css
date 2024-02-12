@@ -1021,7 +1021,7 @@ body {
   }
   .about-wedding .main-cont .dress-cont {
     width: 680px;
-    height: 520px;
+    height: 580px;
   }
   .about-wedding .main-cont .dress-cont .cont1 {
     margin-right: -50px;
@@ -1447,6 +1447,233 @@ body {
     line-height: 40px;
   }
 }
+@media (max-width: 1284px) {
+  .about-wedding .main-cont .location {
+    width: 1166px;
+    height: 646px;
+  }
+}
+@media (max-width: 335px) {
+  .about-wedding .main-cont .dress-cont {
+    width: 306px;
+    height: 306px;
+  }
+  .about-wedding .main-cont .dress-cont .cont1 img {
+    transform: scale(0.22);
+  }
+  .about-wedding .main-cont .dress-cont .cont3 img {
+    transform: scale(0.22);
+  }
+}
+@media (max-width: 1243px) {
+  .about-wedding .main-cont .location {
+    width: 1131px;
+  }
+}
+@media (max-width: 1183px) {
+  .about-wedding .main-cont .location {
+    width: 1000px;
+  }
+  .about-wedding .main-cont .location .location-title {
+    font-size: 45px;
+  }
+  .about-wedding .main-cont .location .view-button {
+    transform: scale(0.9);
+  }
+  .about-wedding .main-cont .location .view-button:hover {
+    transform: scale(1);
+  }
+  .about-wedding .main-cont .location .location-name {
+    font-size: 38px;
+  }
+}
+@media (max-width: 1015px) {
+  .about-wedding .main-cont .location {
+    width: 825px;
+  }
+}
+@media (max-width: 883px) {
+  .about-wedding .main-cont .location {
+    width: 680px;
+    height: 660px;
+  }
+  .about-wedding .main-cont .location .location-title {
+    margin-bottom: 5px;
+  }
+  .about-wedding .main-cont .location .location-code {
+    transform: scale(0.9);
+  }
+  .about-wedding .main-cont .location .location-code:hover {
+    transform: scale(1);
+  }
+}
+@media (max-width: 715px) {
+  .about-wedding .main-cont .location {
+    width: 613px;
+    height: 579px;
+  }
+  .about-wedding .main-cont .location .location-code {
+    margin-bottom: -12px;
+  }
+  .about-wedding .main-cont .location .location-title {
+    font-size: 40px;
+  }
+  .about-wedding .main-cont .location .view-button {
+    transform: scale(0.8);
+  }
+  .about-wedding .main-cont .location .view-button:hover {
+    transform: scale(0.9);
+  }
+  .about-wedding .main-cont .location .location-name {
+    font-size: 33px;
+    margin-bottom: -22px;
+  }
+  .about-wedding .main-cont .location .time {
+    font: 24px;
+  }
+  .about-wedding .main-cont .location .address {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 648px) {
+  .about-wedding .main-cont .location {
+    width: 555px;
+  }
+  .about-wedding .main-cont .location .location-title {
+    font-size: 37px;
+    margin-bottom: -5px;
+  }
+  .about-wedding .main-cont .location .location-code {
+    transform: scale(0.8);
+    margin-bottom: -27px;
+  }
+  .about-wedding .main-cont .location .location-code:hover {
+    transform: scale(0.85);
+  }
+  .about-wedding .main-cont .location .location-name {
+    font-size: 30px;
+  }
+  .about-wedding .main-cont .location .time {
+    font-size: 25px;
+  }
+  .about-wedding .main-cont .location .address {
+    font-size: 13px;
+  }
+}
+@media (max-width: 575px) {
+  .about-wedding .main-cont .location {
+    width: 473px;
+    height: 518px;
+  }
+  .about-wedding .main-cont .location .location-code {
+    transform: scale(0.65);
+  }
+  .about-wedding .main-cont .location .location-code:hover {
+    transform: scale(0.7);
+  }
+  .about-wedding .main-cont .location .location-title {
+    font-size: 32px;
+    margin-bottom: -25px;
+  }
+  .about-wedding .main-cont .location .location-name {
+    font-size: 27px;
+  }
+  .about-wedding .main-cont .location .time {
+    font-size: 20px;
+    margin-bottom: -10px;
+  }
+  .about-wedding .main-cont .location .address {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+}
+@media (max-width: 485px) {
+  .about-wedding .main-cont .location {
+    width: 416px;
+    height: 453px;
+  }
+  .about-wedding .main-cont .location .view-button {
+    transform: scale(0.6);
+  }
+  .about-wedding .main-cont .location .view-button:hover {
+    transform: scale(0.7);
+  }
+  .about-wedding .main-cont .location .location-title {
+    font-size: 28px;
+    margin-bottom: -38px;
+  }
+  .about-wedding .main-cont .location .location-code {
+    margin-bottom: -49px;
+  }
+  .about-wedding .main-cont .location .address {
+    font-size: 9px;
+  }
+}
+@media (max-width: 432px) {
+  .about-wedding .main-cont .location {
+    width: 365px;
+    height: 423px;
+  }
+  .about-wedding .main-cont .location .view-button {
+    transform: scale(0.6);
+  }
+  .about-wedding .main-cont .location .view-button:hover {
+    transform: scale(0.7);
+  }
+  .about-wedding .main-cont .location .location-title {
+    font-size: 24px;
+    margin-bottom: -38px;
+  }
+  .about-wedding .main-cont .location .location-name {
+    font-size: 20px;
+  }
+  .about-wedding .main-cont .location .location-code {
+    margin-bottom: -49px;
+  }
+  .about-wedding .main-cont .location .time {
+    font-size: 17px;
+  }
+  .about-wedding .main-cont .location .address {
+    font-size: 9px;
+    width: 95%;
+  }
+}
+@media (max-width: 380px) {
+  .about-wedding .main-cont .location {
+    width: 328px;
+    height: 423px;
+  }
+  .about-wedding .main-cont .location .view-button {
+    transform: scale(0.55);
+  }
+  .about-wedding .main-cont .location .view-button:hover {
+    transform: scale(0.6);
+  }
+  .about-wedding .main-cont .location .location-title {
+    font-size: 20px;
+    margin-bottom: -38px;
+  }
+  .about-wedding .main-cont .location .location-name {
+    font-size: 18px;
+  }
+  .about-wedding .main-cont .location .location-code {
+    margin-bottom: -49px;
+  }
+  .about-wedding .main-cont .location .time {
+    font-size: 17px;
+  }
+  .about-wedding .main-cont .location .address {
+    font-size: 8px;
+    width: 90%;
+  }
+}
+@media (max-width: 335px) {
+  .about-wedding .main-cont .location {
+    width: 306px;
+    height: 412px;
+  }
+}
 .message-main {
   display: flex;
   height: auto;
@@ -1456,8 +1683,9 @@ body {
   flex-direction: column;
 }
 .message-main .message-cont {
-  width: 1241px;
-  height: 1710px;
+  width: 90%;
+  max-width: 1241px;
+  height: auto;
   border-radius: 26px;
   background: rgb(255, 255, 255);
   margin-top: 150px;
@@ -1470,7 +1698,7 @@ body {
   margin-bottom: 40px;
   color: rgb(0, 0, 0);
   font-family: Lustria;
-  font-size: 33px;
+  font-size: 28px;
   font-weight: 400;
   line-height: 42px;
   letter-spacing: 3%;
@@ -1483,7 +1711,8 @@ body {
   justify-content: center;
 }
 .message-main .message-cont .input-message .name {
-  width: 1079px;
+  width: 90%;
+  max-width: 1079px;
   height: 55px;
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
@@ -1491,13 +1720,14 @@ body {
   padding: 10px;
   margin-bottom: 40px;
   font-family: Lustria;
-  font-size: 29px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 37px;
   letter-spacing: 3%;
 }
 .message-main .message-cont .input-message .message {
-  width: 1079px;
+  width: 90%;
+  max-width: 1079px;
   height: 440px;
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
@@ -1511,7 +1741,8 @@ body {
   letter-spacing: 3%;
 }
 .message-main .message-cont .input-message .submit {
-  width: 176px;
+  width: 60%;
+  max-width: 176px;
   height: 61px;
   border-radius: 9px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -1529,6 +1760,8 @@ body {
   transform: scale(1.1);
 }
 .message-main .message-cont .comment-section {
+  width: 90%;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -1547,25 +1780,25 @@ body {
   flex-direction: column;
 }
 .message-main .message-cont .comment-section .comment-cont .comments .user-name {
+  font-size: 85%;
   color: rgb(26, 64, 25);
   font-family: Lustria;
-  font-size: 31px;
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 3%;
   text-align: left;
 }
 .message-main .message-cont .comment-section .comment-cont .comments .user-message {
+  font-size: 85%;
   color: rgb(48, 48, 48);
   font-family: Lustria;
-  font-size: 22px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 4%;
   text-align: left;
 }
 .message-main .thank-you {
-  margin-top: 50px;
+  margin-top: 5%;
   margin-bottom: 50px;
   color: rgb(255, 255, 255);
   font-family: Luxurious Script;
@@ -1576,6 +1809,18 @@ body {
   text-align: center;
 }
 
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .message-main {
+    padding: 10px; /* Add some padding for smaller screens */
+  }
+  .message-cont {
+    margin-top: 10px; /* Adjust margin top for smaller screens */
+  }
+  .thank-you {
+    font-size: 50px; /* Adjust font size for smaller screens */
+  }
+}
 .footer {
   height: auto;
   width: 100%;
@@ -1608,6 +1853,21 @@ body {
   text-align: left;
 }
 
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .footer-cont {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-cont img {
+    margin: 0; /* Remove margin for image */
+    margin-bottom: 10px; /* Add some space below the image */
+  }
+  .footer-cont a {
+    margin: 0; /* Remove margin for anchor tag */
+  }
+}
 .audio-toggle {
   width: 50px;
   height: 50px;
