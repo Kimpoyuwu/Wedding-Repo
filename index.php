@@ -1,4 +1,48 @@
-<?php include "./server/server.php" ?>
+<?php
+session_start(); // Start the session
+
+$database = 'weddingdb';
+$username = 'root';
+$host = 'localhost';
+$password = '';
+
+$conn = new mysqli($host, $username, $password, $database);
+
+if ($conn->connect_error) {
+    die("Connection Failed: " . $conn->connect_error);
+}
+
+// Variable to store scroll position
+$scrollPosition = 0;
+
+// If form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["title"]) && isset($_POST["message"])) {
+    $title = $_POST["title"];
+    $message = $_POST["message"];
+
+    // Insert data into database
+    $sql = "INSERT INTO messages (title, message) VALUES ('$title', '$message')";
+    if ($conn->query($sql) === TRUE) {
+        // Set session variable to indicate form submission
+        $_SESSION['form_submitted'] = true;
+        // Get scroll position
+        $scrollPosition = isset($_POST['scroll_position']) ? $_POST['scroll_position'] : 0;
+        // Redirect to prevent duplicate form submission
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+// Unset session variable if the page is refreshed
+if (!isset($_SESSION['form_submitted'])) {
+    unset($_SESSION['form_submitted']);
+}
+
+?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -202,19 +246,65 @@
 
     <div class="message-main" id="message-main" >
         <div class="message-cont" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="message-title" data-aos="fade-up" data-aos-duration="1000">
+            <div class="message-title"  style="display: flex; flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
                 Leave your message
                 <img src="Assets/paper-plane.png" alt="">
-            </div>
+            <!-- </div>
             <div class="input-message">
                 <input type="text" class="name" id="your-name" placeholder="Your Name">
                 <textarea name="" class="message" id="your-message" placeholder="Write your message.." cols="30" rows="10"></textarea>
 
                 <button type="submit" class="submit" id="submit">Send</button>
-                
-            </div>
+            </div> -->
+            <form method="post" action="" style="display: flex; flex-direction:column;" id="message-form">
+                <label for="title">Name:</label><br>
+                <input type="text" id="title" name="title"><br><br>
 
-            <div class="comment-section">
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="hidden" name="scroll_position" id="scroll_position" value="<?php echo $scrollPosition; ?>">
+            </form>
+
+            <script>
+                // JavaScript function to scroll to the message section and show alert
+                function scrollToMessageSection() {
+                    // Check if the form has been submitted and a message has been successfully stored
+                    if (<?php echo isset($_SESSION['form_submitted']) ? 'true' : 'false'; ?>) {
+                        document.getElementById("message-main").scrollIntoView({ behavior: 'smooth' });
+                        // Show alert when message is successfully submitted
+                        alert("Your message has been submitted successfully!");
+                        // Unset the session variable to avoid showing the alert again on page reload
+                        <?php unset($_SESSION['form_submitted']); ?>;
+                    }
+                }
+
+                // Call the function when the page loads
+                window.onload = scrollToMessageSection;
+            </script>
+
+
+
+
+            <?php
+            // Display stored messages
+            $sql = "SELECT title, message FROM messages";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+               
+                while ($row = $result->fetch_assoc()) {
+                    echo "<p><strong>Name:</strong> " . $row["title"] . "<br><strong>Message:</strong> " . $row["message"] . "</p>";
+                }
+            } else {
+                echo "<p>No messages stored yet</p>";
+            }
+
+            $conn->close();
+            ?>
+
+            <!-- <div class="comment-section">
                 <div class="comment-cont">
                     <div class="comments">
                         <p class="user-name" id="user-name">Juan Dela Cruz</p>
@@ -252,7 +342,7 @@
                     </div>
                 </div>
                 
-            </div>
+            </div> -->
 
 
         </div>
