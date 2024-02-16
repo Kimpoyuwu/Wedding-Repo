@@ -33,20 +33,95 @@
     }
 }
 
-/* Media query for screens smaller than 768px */
-@media (max-width: 768px) {
-    .footer-cont {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+@media (max-width:841px){
+    .footer{
+        height: 122px;
+        .footer-cont{
+            font-size: 25px;
+            margin-bottom: 60px;
+            img{
+                transform: scale(.9);
+                margin-right: 10px;
+            }
+            a{
+                margin-left: 10px;
+                font-size: 22px;
+            }
+        }
     }
+}
 
-    .footer-cont img {
-        margin: 0; /* Remove margin for image */
-        margin-bottom: 10px; /* Add some space below the image */
+@media (max-width:604px){
+    .footer{
+        height: 122px;
+        .footer-cont{
+            font-size: 23px;
+            margin-top: 37px;
+            margin-bottom: 40px;
+            img{
+                transform: scale(.8);
+                margin-right: 7px;
+            }
+            a{
+                margin-left: 7px;
+                font-size: 20px;
+            }
+        }
     }
+}
 
-    .footer-cont a {
-        margin: 0; /* Remove margin for anchor tag */
+@media (max-width:524px){
+    .footer{
+        height: 122px;
+        .footer-cont{
+            font-size: 20px;
+            margin-top: 37px;
+            margin-bottom: 40px;
+            img{
+                transform: scale(.7);
+                margin-right: -2px;
+            }
+            a{
+                margin-right: -2px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width:400px){
+    .footer{
+        height: 122px;
+        .footer-cont{
+            font-size: 17px;
+            margin-top: 37px;
+            margin-bottom: 40px;
+            img{
+                transform: scale(.6);
+                margin-right: -5px;
+            }
+            a{
+                margin-right: -5px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (max-width:350px){
+    .footer{
+        height: 122px;
+        .footer-cont{
+            font-size: 16px;
+            margin-top: 37px;
+            margin-bottom: 40px;
+            img{
+                transform: scale(.55);
+                margin-right: -5px;
+            }
+            a{
+                margin-right: -5px;
+                font-size: 13px;
+            }
+        }
     }
 }

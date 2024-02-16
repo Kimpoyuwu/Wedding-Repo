@@ -1,62 +1,10 @@
-<?php
-session_start(); // Start the session
-
-$database = 'weddingdb';
-$username = 'root';
-$host = 'localhost';
-$password = '';
-
-$conn = new mysqli($host, $username, $password, $database);
-
-
-if ($conn->connect_error) {
-    die("Connection Failed: " . $conn->connect_error);
-}
-
-
-
-// Variable to store scroll position
-$scrollPosition = 0;
-
-// Set character set
-$conn->set_charset("utf8mb4");
-
-// If form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["title"]) && isset($_POST["message"])) {
-    $title = $conn->real_escape_string($_POST["title"]);
-    $message = $conn->real_escape_string($_POST["message"]);
-
-    // Insert data into database
-    $sql = "INSERT INTO messages (title, message) VALUES ('$title', '$message')";
-    if ($conn->query($sql) === TRUE) {
-        // Set session variable to indicate form submission
-        $_SESSION['form_submitted'] = true;
-        // Get scroll position
-        $scrollPosition = isset($_POST['scroll_position']) ? $_POST['scroll_position'] : 0;
-        // Redirect to prevent duplicate form submission
-        header("Location: " . $_SERVER['PHP_SELF']);
-        exit();
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-}
-
-// Unset session variable if the page is refreshed
-if (!isset($_SESSION['form_submitted'])) {
-    unset($_SESSION['form_submitted']);
-}
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ernest & jho</title>
-  <link rel="stylesheet" href="style.css ?<?php echo time(); ?>">
+  <link rel="stylesheet" href="style.css">
   <!--FAVICON-->
   <link rel="icon" type="image/x-icon" href="Assets/logo.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -79,7 +27,7 @@ if (!isset($_SESSION['form_submitted'])) {
 
                 <ul class="navlinks" id="links" >
                     <li class="navitems" ><a href="#home" id="Home" class="itemlinks active">Home</a></li>
-                    <li class="navitems"><a href="#JhoAndErn" id="jhoAndErn" class="itemlinks">Jho & Ern</a></li>
+                    <li class="navitems"><a href="#JhoAndErn" id="jhoAndErn" class="itemlinks">Ernest & Jho</a></li>
                     <li class="navitems"><a href="#about-wedding" id="About-wedding" class="itemlinks">About Wedding</a></li>
                     <li class="navitems"><a href="#message-main" id="Message-main" class="itemlinks">Messages</a></li>
 
@@ -115,15 +63,14 @@ if (!isset($_SESSION['form_submitted'])) {
                 <img src="Assets/pic1.png" alt="img" data-aos="fade-left" data-aos-duration="1000">
             </div>
             <div class="right-cont">
-                <p class="caption" data-aos="fade-right" data-aos-duration="1000">In life's vast tapestry, meeting a person is a sublime intersection of fate and chance. It's a serendipitous encounter that ignites the dormant embers within our being, offering endless possibilities for connection and understanding in the chaos of existence.
-                </p>
+                <p class="caption" data-aos="fade-right" data-aos-duration="1000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It</p>
             </div>
         </div>
 
         <div class="container1">
 
             <div class="left-cont">
-                <p class="caption" data-aos="fade-left" data-aos-duration="1000">Sharing experiences with the person you love is like weaving threads of joy and understanding into the fabric of your relationship. Each moment shared becomes a cherished memory, etched in the tapestry of your shared journey. Together, you navigate life's highs and lows, finding solace and strength in each other's embrace.</p>
+                <p class="caption" data-aos="fade-left" data-aos-duration="1000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It</p>
             </div>
 
             <div class="right-cont">
@@ -136,14 +83,14 @@ if (!isset($_SESSION['form_submitted'])) {
                 <img src="Assets/pic3.png" alt="img" data-aos="fade-left" data-aos-duration="1000">
             </div>
             <div class="right-cont">
-                <p class="caption" data-aos="fade-right" data-aos-duration="1000">Love is the melody that orchestrates the symphony of happiness, its gentle notes weaving through the moments of our lives, infusing them with meaning and joy. In the embrace of love, happiness finds its truest expression, blooming like a radiant flower in the garden of the heart. Together, love and happiness create a harmonious duet, enriching each other in a beautiful dance of shared fulfillment.</p>
+                <p class="caption" data-aos="fade-right" data-aos-duration="1000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It</p>
             </div>
         </div>
 
         <div class="container1">
 
             <div class="left-cont" >
-                <p class="caption" data-aos="fade-left" data-aos-duration="1000">Intertwining two souls in a timeless dance of love and commitment, where every step is a promise to journey through life together. It's a sacred union where two hearts become one, bound by the threads of shared dreams, laughter, and unwavering support. In the symphony of love, marrying each other is the sweetest melody, resonating with the harmony of forever.</p>
+                <p class="caption" data-aos="fade-left" data-aos-duration="1000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It</p>
             </div>
 
             <div class="right-cont">
@@ -230,7 +177,7 @@ if (!isset($_SESSION['form_submitted'])) {
                     love in a monetary way, we would be grateful, as it would only add to our joy.
                 </div>
                 
-                <div class="codes">
+                <div class="codes" >
                     <div class="gcash">
                         <img src="Assets/gcash.png" alt="" data-aos="zoom-in" data-aos-duration="1000">
                         <p data-aos="zoom-in" data-aos-duration="1000">GCASH</p>
@@ -250,77 +197,71 @@ if (!isset($_SESSION['form_submitted'])) {
     </div>
 
     <!--SEND MESSAGES-->
-
-    <div class="message-main" id="message-main" >
-        <div class="message-cont" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="message-title" data-aos="fade-up" data-aos-duration="1000">
-                Leave your message
-                <img src="Assets/paper-plane.png" alt="">
-            </div>
-            
-            
-            <form method="post" action="" id="message-form" class="form" accept-charset="UTF-8">
-                <label for="title"></label><br>
-                <input type="text" id="title" name="title" placeholder="Your Name" class="name">
-
-                <label for="message" class="user-message"></label>
-                <textarea id="message" name="message" rows="4" cols="50"placeholder="Message.." class="message"></textarea>
-
-                <input type="submit" value="Send" class="submit" data-aos="zoom-in" data-aos-duration="1000">
-                <input type="hidden" name="scroll_position" id="scroll_position" value="<?php echo $scrollPosition; ?>">
-            </form>
-
-            <script>
-                // JavaScript function to scroll to the message section and show alert
-                function scrollToMessageSection() {
-                    // Check if the form has been submitted and a message has been successfully stored
-                    if (<?php echo isset($_SESSION['form_submitted']) ? 'true' : 'false'; ?>) {
-                        document.getElementById("message-main").scrollIntoView({ behavior: 'smooth' });
-                        // Show alert when message is successfully submitted
-                        alert("Your message has been submitted successfully!");
-                        // Unset the session variable to avoid showing the alert again on page reload
-                        <?php unset($_SESSION['form_submitted']); ?>;
-                    }
-                }
-
-                // Call the function when the page loads
-                window.onload = scrollToMessageSection;
-            </script>
-
-
-            <div class="comment-main">
-                <div class="comment-cont" data-aos="fade-up" data-aos-duration="1000">
-                    <?php
-                    // Display stored messages
-                    $sql = "SELECT title, message FROM messages ORDER BY id DESC";
-                    $result = $conn->query($sql);
-
-                    if ($result->num_rows > 0) {
-                    
-                        while ($row = $result->fetch_assoc()) {
-                            echo "<p class = 'user-name'>" . $row["title"] . "</p>";
-                            echo "<p class = 'user-message'>" . $row["message"] . "</p>";
-                        }
-                    } else {
-                        echo "<p class = 'no-message'>(No posts yet)</p>";
-                    }
-
-                    $conn->close();
-                    ?>
+    <form action="#">
+        <div class="message-main" id="message-main" >
+            <div class="message-cont" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="message-title" data-aos="fade-up" data-aos-duration="1000">
+                    Leave your message
+                    <img src="Assets/paper-plane.png" alt="">
                 </div>
+                <div class="input-message">
+                    <input type="text" class="name" id="your-name" placeholder="Your Name">
+                    <textarea name="" class="message" id="your-message" placeholder="Write your message.." cols="30" rows="10"></textarea>
+    
+                    <button type="submit" class="submit" id="submit">Send</button>
+                    
+                </div>
+    
+                <div class="comment-section">
+                    <div class="comment-cont">
+                        <div class="comments">
+                            <p class="user-name" id="user-name">Juan Dela Cruz</p>
+                            <p class="user-message" id="user-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis quae dolorum, accusantium dicta nesciunt, dignissimos expedita molestiae amet voluptates doloremque sed distinctio eligendi at pariatur. Dolorem esse eligendi enim.</p>
+                        </div>
+                    </div>
+                    <div class="comment-cont">
+                        <div class="comments">
+                            <p class="user-name" id="user-name">Juan Dela Cruz</p>
+                            <p class="user-message" id="user-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis quae dolorum, accusantium dicta nesciunt, dignissimos expedita molestiae amet voluptates doloremque sed distinctio eligendi at pariatur. Dolorem esse eligendi enim.</p>
+                        </div>
+                    </div>
+                    <div class="comment-cont">
+                        <div class="comments">
+                            <p class="user-name" id="user-name">Juan Dela Cruz</p>
+                            <p class="user-message" id="user-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis quae dolorum, accusantium dicta nesciunt, dignissimos expedita molestiae amet voluptates doloremque sed distinctio eligendi at pariatur. Dolorem esse eligendi enim.</p>
+                        </div>
+                    </div>
+                    <div class="comment-cont">
+                        <div class="comments">
+                            <p class="user-name" id="user-name">Juan Dela Cruz</p>
+                            <p class="user-message" id="user-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis quae dolorum, accusantium dicta nesciunt, dignissimos expedita molestiae amet voluptates doloremque sed distinctio eligendi at pariatur. Dolorem esse eligendi enim.</p>
+                        </div>
+                    </div>
+                    <div class="comment-cont">
+                        <div class="comments">
+                            <p class="user-name" id="user-name">Juan Dela Cruz</p>
+                            <p class="user-message" id="user-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis quae dolorum, accusantium dicta nesciunt, dignissimos expedita molestiae amet voluptates doloremque sed distinctio eligendi at pariatur. Dolorem esse eligendi enim.</p>
+                        </div>
+                    </div>
+                    <div class="comment-cont">
+                        <div class="comments">
+                            <p class="user-name" id="user-name">Juan Dela Cruz</p>
+                            <p class="user-message" id="user-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis quae dolorum, accusantium dicta nesciunt, dignissimos expedita molestiae amet voluptates doloremque sed distinctio eligendi at pariatur. Dolorem esse eligendi enim.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+    
             </div>
             
-                
-
-
-
+            <div class="thank-you" data-aos="fade-up" data-aos-duration="1000">
+                Thank you
+            </div>
+    
         </div>
-        
-        <div class="thank-you" data-aos="fade-up" data-aos-duration="1000">
-            Thank you
-        </div>
-
-    </div>
+    </form>
+   
 
     <!--FOOTER-->
     <div class="footer">
